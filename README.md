@@ -1,1 +1,1 @@
-# edu-landing-page
+# edu landing page
