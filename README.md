@@ -38,3 +38,9 @@ _Використовуються для зручності розробки і 
 ```
 
 - Скрипти та стилі підключаються до основного html файла
+
+# Як прив'язати гугл таблицю
+
+https://www.youtube.com/watch?v=3wg4SazgGPs
+
+https://github.com/jamiewilson/form-to-google-sheets

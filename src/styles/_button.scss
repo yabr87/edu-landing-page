@@ -1,23 +1,23 @@
 .btn {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 2;
   text-align: center;
-  letter-spacing: 0.06em;
-  color: white;
+  letter-spacing: 0.15em;
+  color: $text-color;
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
-  width: 200px;
+
   padding: 10px 30px;
-  background-color: #0ca79f;
-  border-radius: 8px;
+  background-color: $primary-color;
+  border-radius: $radius;
   border: none;
   cursor: pointer;
   transition: all 250ms ease;
 
   &:hover,
   &:focus {
-    background-color: #f57d7e;
+    background-color: $accent-color;
   }
 }

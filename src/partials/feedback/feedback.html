@@ -1,92 +1,108 @@
-<section class="feedback">
+<section class="widget">
   <div class="container">
-    <div class="feedback-video">
-      <div class="feedback-iframe-wrapper">
-        <iframe
-          class="feedback-iframe"
-          title="YouTube video player"
-          src="https://www.youtube.com/embed/9GkGbj6xNhs"
-        ></iframe>
+    <div class="widget-info">
+      <div class="widget-video">
+        <div class="widget-iframe-wrapper">
+          <iframe
+            class="widget-iframe"
+            title="YouTube video player"
+            src="https://www.youtube.com/embed/9GkGbj6xNhs"
+          ></iframe>
+        </div>
       </div>
-    </div>
-    <div class="feedback-info">
-      <p>
+
+      <p class="widget-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam
         amet doloribus culpa itaque voluptates accusantium optio odit debitis
         commodi! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         Corporis, ea.
       </p>
+    </div>
 
-      <form class="feedback-form" name="feedback">
+    <div class="widget-form-wrapper">
+      <button class="slider-btn btn" type="button">
+        <span class="form-btn-text">Дізнатись більше</span>
+        <img
+          class="play-icon"
+          src="./img/play.svg"
+          alt="play icon"
+          width="24"
+          height="24"
+        />
+      </button>
+      <form class="widget-form visually-hidden" name="feedback">
         <label class="visually-hidden"
           >feedback form
           <input type="text" name="widget" value="feedback" />
         </label>
 
-        <div class="feedback-radio-wrapper">
-          <p class="feedback-form-text">
+        <div class="form-radio-wrapper">
+          <p class="form-form-text">
             Наскільки цей продукт може допомогти тобі покращити онлайн зустрічі?
           </p>
-          <label class="feedback-stars"
+          <label class="form-stars"
             >1
             <input type="radio" name="stars" value="1" required />
           </label>
-          <label class="feedback-stars"
+          <label class="form-stars"
             >2
             <input type="radio" name="stars" value="2" />
           </label>
-          <label class="feedback-stars"
+          <label class="form-stars"
             >3
             <input type="radio" name="stars" value="3" />
           </label>
-          <label class="feedback-stars"
+          <label class="form-stars"
             >4
             <input type="radio" name="stars" value="4" />
           </label>
-          <label class="feedback-stars"
+          <label class="form-stars"
             >5
             <input type="radio" name="stars" value="5" />
           </label>
         </div>
 
-        <div class="feedback-radio-wrapper">
-          <p class="feedback-form-text">
+        <div class="form-radio-wrapper">
+          <p class="form-form-text">
             Хочеш бути в списку перших користувачів безкоштовно?
           </p>
-          <label class="feedback-choice"
+          <label class="form-choice"
             >Ні
             <input type="radio" name="subscribe" value="false" required />
           </label>
-          <label class="feedback-choice"
+          <label class="form-choice"
             >Так
             <input type="radio" name="subscribe" value="true" />
           </label>
         </div>
 
-        <div class="feedback-choice-wrapper">
-          <p class="feedback-form-text">
-            Залиште вашу електронну пошту для зв'язку:
-          </p>
-          <label class="feedback-email"
-            >Email:
-            <input type="email" name="email" required />
+        <div class="form-choice-wrapper">
+          <label class="form-email"
+            >Залиште вашу електронну пошту для зв'язку:
+            <input
+              class="form-email-input"
+              type="email"
+              name="email"
+              required
+            />
           </label>
         </div>
 
-        <div class="feedback-comment-wrapper">
-          <label class="feedback-comment" for="user-text-id"
-            >Ваш коментар:</label
-          >
+        <div class="form-comment-wrapper">
+          <label class="form-comment" for="user-text-id">Ваш коментар:</label>
           <textarea
-            class="feedback-comment-field"
+            class="form-comment-field"
             name="comment"
             id="user-text-id"
             placeholder="Залиште коментар"
           ></textarea>
         </div>
 
-        <div class="feedback-btn-wrapper">
-          <button class="feedback-btn btn" type="submit">надіслати</button>
+        <div class="form-btn-wrapper">
+          <button class="form-btn btn" type="submit">
+            <span class="form-btn-text">надіслати відповідь</span>
+            <img src="./img/play.svg" alt="play icon" width="24" height="24" />
+          </button>
         </div>
       </form>
     </div>
