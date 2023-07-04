@@ -1,8 +1,12 @@
 const scriptURL =
-  'https://script.google.com/macros/s/AKfycbxZpxTAloSQK0n1r3e02-cCEqXsRalj462V3HnQ5rEueypaAAU6nezCas0If_RNFjt4Lg/exec';
+  'https://script.google.com/macros/s/AKfycbz_XsAzBcdPZOQ9Z1xWFnKQbYra72sAmbeohZEaEYIogUmqTJXWmTAp7TbG0NULmTmC/exec';
 const form = document.forms['feedback'];
+const formBtn = document.querySelector('.slider-btn');
+const formWrapper = document.querySelector('.widget-form-wrapper');
+const sliderBtnIcon = document.querySelector('.play-icon');
 
 form.addEventListener('submit', onFormSubmit);
+formBtn.addEventListener('click', onFormBtnClick);
 
 function onFormSubmit(e) {
   e.preventDefault();
@@ -16,4 +20,11 @@ function onFormSubmit(e) {
       console.error('Error!', error.message);
       alert('Error!');
     });
+}
+
+function onFormBtnClick() {
+  formBtn.classList.toggle('change-color');
+  formWrapper.classList.toggle('show-form');
+  sliderBtnIcon.classList.toggle('icon-rotate');
+  console.log('click');
 }

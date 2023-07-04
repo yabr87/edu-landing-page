@@ -7,7 +7,8 @@
   letter-spacing: 0.15em;
   color: $text-color;
   text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -2px;
 
   padding: 10px 30px;
   background-color: $primary-color;
@@ -16,8 +17,7 @@
   cursor: pointer;
   transition: all 250ms ease;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $accent-color;
   }
 }
