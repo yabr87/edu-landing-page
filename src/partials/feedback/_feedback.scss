@@ -15,6 +15,11 @@
   }
 }
 
+.widget-banner {
+  border-radius: $radius;
+  overflow: hidden;
+}
+
 .widget-video,
 .widget-text {
   flex-basis: 50%;
@@ -127,7 +132,7 @@
   border-radius: $radius;
   border: 1px solid transparent;
   transition: all 0.5s ease;
-  height: 58px;
+  max-height: 58px;
   z-index: 2;
 }
 
@@ -137,14 +142,15 @@
 
   border-radius: $radius;
   // opacity: inherit;
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
 .widget-form-wrapper.show-form {
-  height: 498px;
+  height: 100%;
+  max-height: 1600px;
   border: 1px solid $accent-color;
   opacity: 1;
 }
